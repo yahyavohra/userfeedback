@@ -3,8 +3,8 @@
 
 ### `npm install
 
-Download the Project file and open the command terminal run the Command <br />
-it will automatically install all of the Depency in the project folder.
+Download the Project file and open the command terminal run the Command. <br />
+It will automatically install all of Depency inside the project folder.
 
 
 ### `npm start`
@@ -19,9 +19,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 A localhost Node.js, React.js installed on your machine.
 
 
-### Project  
-
-(I have added 20 dummy reviews for the functionality.)
+### Data  
+(Already Inlcude Some Test Data.)
 
 * Total Rating 
 * Trend Graph
@@ -31,7 +30,7 @@ A localhost Node.js, React.js installed on your machine.
 
 
 ### Local Storage
-Using local storage for saving data for reviews
+Using a local storage for store the review data.
 
 ## Built With
 
