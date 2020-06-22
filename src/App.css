@@ -1,0 +1,482 @@
+:root{
+  --page-bg: #fdfdfd;
+  --row-bg:white;
+
+}
+@media (min-width: 1300px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1250px;
+    margin-bottom: 60px;
+  }
+}
+
+
+
+body{
+  background-color: var(--page-bg);
+}
+.nightmode{
+  --page-bg: black;
+  --row-bg:#333;
+}
+.box{
+  background-color: var(--row-bg) ;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.06);
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.06);
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.06);
+}
+
+
+.top-area{
+  margin-top: 10px;
+  padding: 25px 25px;
+}
+
+.App {
+  text-align: center;
+}
+ul{
+  list-style:none;
+}
+.ttl_reviews{
+  padding-top: 10px;
+}
+.ttl_reviews .group-bar {
+  display: block;
+  margin: 2px 0px 2px 0px;
+  text-align: left;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 5px;
+}
+.ttl_reviews .group-bar > div {
+
+}
+.ttl_reviews .group-bar span {
+  color: #555;
+  display: inline-block;
+  font-size: 16px;
+  width: auto;
+}
+.ttl_reviews .group-bar span:after {
+  content: "\2605";
+  color: #ffca12;
+  font-size: 19px;
+}
+.ttl_reviews .group-bar span.total:after {
+  content: "\2605";
+  
+}
+.ttl_reviews .group-bar .bar {
+  background: #f1f1f1 none repeat scroll 0 0;
+  display: inline-block;
+  height: 4px;
+  overflow: hidden;
+  width: 70%;
+  top: -4px;
+  position: relative;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.ttl_reviews .group-bar .bar .bar-fill {
+  display: block;
+  height: 100%;
+  transition: width 0.6s ease 0s;
+  width: 0;
+  background: #ffca12;
+}
+.pdp_rnr .rnr_details .rnr_bar .ttl_reviews .group-bar span {
+  color: #555;
+  display: inline-block;
+  margin: 0 0 0 5px;
+  font-size: 14px;
+  width: auto;
+}
+.totalpeople{
+  text-align: right;
+  padding-top: 8px;
+  font-style: italic;
+  font-size: 14px;
+  color: #333;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*call rating area*/
+
+.note-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.circle {
+  position: relative;
+}
+
+.circle__svg {
+  transform: rotate(-90deg);
+}
+
+.circle__progress {
+  fill: none;
+  stroke-width: 8;
+  stroke-opacity: 0.3;
+  stroke-linecap: round;
+}
+
+.circle__progress--fill {
+  --initialStroke: 0;
+  --transitionDuration: 0;
+  stroke-opacity: 1;
+  stroke-dasharray: var(--initialStroke);
+  stroke-dashoffset: var(--initialStroke);
+  transition: stroke-dashoffset var(--transitionDuration) ease;
+}
+
+
+
+.circle__progress--fill { stroke: #ffca12; }
+
+.circle__progress--path{
+  stroke: #e8e8e8;
+}
+.tagarea{
+  position: absolute;
+  top: 15%;
+  color: #ffca12;
+
+}
+.percent {
+  font-weight: bold;
+  text-align: center;
+  line-height: 28px;
+  
+}
+
+.percent__int { font-size: 40px; }
+.percent__dec { font-size: 12px; }
+
+.label {
+  
+  font-size: 14px;
+  text-transform: uppercase;
+  color:#d0c8c8
+  
+}
+.percent::before{
+  unicode-bidi: bidi-override;
+  content: "\2605";
+  display: block;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.Series  path {
+  stroke: #1eb99d!important;
+}
+
+.circle__progress--fill.blank{
+  stroke: transparent;
+}
+.greystars{
+  top: 35%;
+  text-align: center;
+  color: #d0c8c8;
+
+}
+.stars{
+
+}
+.stars span{
+
+}
+.stars span::before{
+  unicode-bidi: bidi-override;
+  content: "\2605";
+  font-size: 24px;
+
+}
+.stars.detail {
+  color: #ddd;
+}
+.stars.detail .select {
+  color:  #ffca12;
+}
+.btn-review{
+  margin-bottom: 20px;
+    border: 2px solid #ffca12;
+    color: #ffca12;
+    min-width: 210px;
+    height: 46px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+}
+.btn-review:hover , 
+.btn-review:focus,
+.btn-review:focus{
+  background-color: #ffca12;
+  color: #fff;
+  border-color: transparent;
+}
+
+
+.border-line{
+  background-color: rgba(204, 204, 204, 0.4);
+  height: 1px;
+  margin-top: 10px;
+}
+.each-review{
+  padding: 30px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.4);
+
+
+}
+.review-area{
+  display: inline-block;
+  width: 100%;
+ 
+}
+.review-area .each-review:last-child{
+  border:none;
+}
+.profile{
+  padding-top: 15px;
+}
+.profile-pic{
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding-top: 11px;
+}
+.profile label.name{
+  display: block;
+  line-height: 12px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.profile label.star{
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #696161;
+  font-weight: 500;
+}
+.heading{
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.detail{
+
+}
+
+.review-add{
+  padding: 20px 40px;
+    border: 1px solid #ced4da;
+    border-radius: 9px;
+    margin-bottom: 30px;
+    background-color: #fdfdfd;
+}
+.review-add h4{
+  margin-bottom: 20px;
+}
+.staradd{
+  unicode-bidi: bidi-override;
+    direction: rtl;
+    
+}
+.staradd > label{
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+  font-size: 30px;
+  line-height: 34px;
+  cursor: pointer;
+}
+.staradd input{
+  display: none 
+}
+.staradd > label:before{
+  content: "\2605";
+  position: absolute;
+  left: 0;
+  color: transparent;
+}
+.staradd > label:hover:before, 
+.staradd > label:hover ~ label:before{
+  color: gold;
+}
+.staradd input[type=radio]:checked  ~ label:before{
+  color: gold;
+}
+
+.mybtn{
+  background-color: #ffca12 !important;
+  border-color: #fff!important;
+  min-width: 100px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  height: 40px;
+}
+.checkmarkcircle {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 8px;
+}
+.checkmarkcircle .background {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #8edc9b;
+  position: absolute;
+  border-radius: 52%;
+}
+.checkmarkcircle .checkmark {
+  border-radius: 5px;
+}
+.checkmarkcircle .checkmark.draw:after {
+  -webkit-animation-delay: 100ms;
+  -moz-animation-delay: 100ms;
+  animation-delay: 100ms;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-name: checkmark;
+  -moz-animation-name: checkmark;
+  animation-name: checkmark;
+  -webkit-transform: scaleX(-1) rotate(135deg);
+  -moz-transform: scaleX(-1) rotate(135deg);
+  -ms-transform: scaleX(-1) rotate(135deg);
+  -o-transform: scaleX(-1) rotate(135deg);
+  transform: scaleX(-1) rotate(135deg);
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.checkmarkcircle .checkmark:after {
+  opacity: 1;
+  height: 14px;
+  width: 6px;
+  transform-origin: left top;
+  border-right: 4px solid #8edc9b;
+  border-top: 4px solid #8edc9b;
+  border-radius: 2.5px !important;
+  content: '';
+  left: 6px;
+  top: 17px;
+  position: absolute;
+}
+
+@-webkit-keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 8px;
+    opacity: 1;
+  }
+  40% {
+    height: 18px;
+    width: 9px;
+    opacity: 1;
+  }
+  100% {
+    height: 18px;
+    width: 9px;
+    opacity: 1;
+  }
+}
+@-moz-keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+
+    width: 9px;
+    opacity: 1;
+  }
+  40% {
+    height: 18px;
+    width: 9px;
+    opacity: 1;
+  }
+  100% {
+    height: 18px;
+    width: 9px;
+    opacity: 1;
+  }
+}
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 9px;
+    opacity: 1;
+  }
+  40% {
+    height: 18px;
+    width: 9px;
+    opacity: 1;
+  }
+  100% {
+    height: 18px;
+    width: 9px;
+    opacity: 1;
+  }
+}
+
+.sucess-text{
+  display: inline-block;
+  padding-left: 5px;
+  padding-top: 10px;
+}
